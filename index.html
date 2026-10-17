@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#101b17" />
+  <meta name="description" content="MyPet is a calm, premium space to organise your companion's profile, care notes, and joyful moments." />
+  <title>MyPet — A little more care, every day</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="MyPet home">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+      <span>my<span class="brand-light">pet</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#companions">Companions</a>
+      <a href="#care">Care journal</a>
+      <a href="#sounds">Sound garden</a>
+    </nav>
+    <a class="header-cta" href="#companions">Meet your space <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> A more thoughtful way to care</div>
+        <h1>Every little life<br><em>deserves</em> a world<br>of its own.</h1>
+        <p class="hero-intro">A beautiful home for your pet’s details, daily rituals, and the small moments that make them family.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#companions">Explore MyPet <span aria-hidden="true">→</span></a>
+          <button class="button button-quiet" id="heroSound"><span class="play-dot">▶</span> Hear the sound garden</button>
+        </div>
+        <div class="hero-proof">
+          <div class="avatar-stack" aria-hidden="true"><span>🐕</span><span>🐈</span><span>🦜</span></div>
+          <div><strong>A calmer kind of pet care</strong><small>Profiles · Care notes · Little sounds</small></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="hero-sun"></div>
+        <div class="hero-pet-card">
+          <div class="hero-card-top"><span>COMPANION NO. 001</span><span class="live-dot"></span></div>
+          <div class="hero-animal" aria-hidden="true">
+            <svg viewBox="0 0 340 300" role="img" aria-label="Original stylised illustration of a sitting dog">
+              <defs>
+                <linearGradient id="fur" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#e9cda3"/><stop offset="1" stop-color="#b77c53"/></linearGradient>
+                <linearGradient id="ear" x1="0" x2="1"><stop stop-color="#9b6044"/><stop offset="1" stop-color="#70412f"/></linearGradient>
+              </defs>
+              <ellipse cx="176" cy="267" rx="91" ry="13" fill="#1b3028" opacity=".12"/>
+              <path d="M104 105 Q67 75 77 39 Q112 45 132 87" fill="url(#ear)"/>
+              <path d="M223 101 Q256 61 282 67 Q281 105 245 130" fill="url(#ear)"/>
+              <path d="M111 114 Q116 78 170 73 Q226 74 239 121 L248 203 Q251 249 211 253 L132 253 Q93 246 99 207Z" fill="url(#fur)"/>
+              <path d="M120 141 Q139 119 161 132 Q179 144 168 178 Q156 203 127 187Z" fill="#f7e6cb"/>
+              <path d="M205 137 Q230 122 239 151 L235 188 Q211 202 196 179Z" fill="#f7e6cb"/>
+              <ellipse cx="170" cy="150" rx="57" ry="58" fill="#d7aa7a"/>
+              <path d="M121 128 Q131 89 171 91 Q214 91 222 129 L214 170 Q198 203 170 201 Q139 202 125 169Z" fill="#edcea1"/>
+              <ellipse cx="149" cy="146" rx="5" ry="7" fill="#30251f"/><ellipse cx="193" cy="146" rx="5" ry="7" fill="#30251f"/>
+              <ellipse cx="171" cy="165" rx="13" ry="9" fill="#49342b"/>
+              <path d="M171 174 Q163 184 153 178 M171 174 Q180 184 190 178" fill="none" stroke="#49342b" stroke-width="3" stroke-linecap="round"/>
+              <path d="M119 214 Q105 231 120 248 M222 213 Q237 230 221 249" fill="none" stroke="#b77c53" stroke-width="13" stroke-linecap="round"/>
+              <path d="M146 222 Q170 235 195 222" fill="none" stroke="#fff0d8" stroke-width="7" stroke-linecap="round"/>
+              <path d="M112 111 Q89 151 105 183" fill="none" stroke="#f7e6cb" stroke-width="8" stroke-linecap="round" opacity=".8"/>
+            </svg>
+          </div>
+          <div class="hero-card-bottom"><div><small>Meet the mood</small><strong>Curious & kind</strong></div><span class="round-arrow">↗</span></div>
+        </div>
+        <div class="floating-note note-top"><span class="note-icon">♡</span><span><strong>Little things matter</strong><small>Keep every detail close</small></span></div>
+        <div class="floating-note note-bottom"><span class="sound-bars"><i></i><i></i><i></i><i></i><i></i></span><span><strong>Listen a little</strong><small>Tap to hear a friend</small></span></div>
+      </div>
+    </section>
+
+    <section class="stats-strip section-wrap" aria-label="MyPet highlights">
+      <div><strong>01</strong><span>A profile for every pet</span></div>
+      <div><strong>02</strong><span>Care notes, all in one place</span></div>
+      <div><strong>03</strong><span>Small sounds, big smiles</span></div>
+    </section>
+
+    <section class="companions section-wrap section-pad" id="companions">
+      <div class="section-heading">
+        <div><div class="eyebrow">YOUR LITTLE UNIVERSE</div><h2>Meet the <em>companions.</em></h2></div>
+        <p>Every personality is different. Start with a little profile and make this space your own.</p>
+      </div>
+      <div class="pet-grid" id="petGrid">
+        <article class="pet-card pet-dog">
+          <div class="pet-visual dog-visual"><span class="pet-number">01 / DOG</span><div class="pet-emoji" aria-hidden="true">🐕</div><span class="visual-caption">The loyal adventurer</span></div>
+          <div class="pet-card-content"><div><h3>Dogs</h3><p>Big energy. Bigger heart.</p></div><button class="sound-button" data-sound="dog" aria-label="Play a dog bark" title="Play dog sound">▶</button></div>
+          <button class="text-link profile-open" data-kind="Dog">Create a dog profile <span>↗</span></button>
+        </article>
+        <article class="pet-card pet-cat">
+          <div class="pet-visual cat-visual"><span class="pet-number">02 / CAT</span><div class="pet-emoji" aria-hidden="true">🐈</div><span class="visual-caption">The quiet observer</span></div>
+          <div class="pet-card-content"><div><h3>Cats</h3><p>Soft paws. Strong opinions.</p></div><button class="sound-button" data-sound="cat" aria-label="Play a cat meow" title="Play cat sound">▶</button></div>
+          <button class="text-link profile-open" data-kind="Cat">Create a cat profile <span>↗</span></button>
+        </article>
+        <article class="pet-card pet-bird">
+          <div class="pet-visual bird-visual"><span class="pet-number">03 / BIRD</span><div class="pet-emoji" aria-hidden="true">🦜</div><span class="visual-caption">The bright songbird</span></div>
+          <div class="pet-card-content"><div><h3>Birds</h3><p>A little song in the room.</p></div><button class="sound-button" data-sound="bird" aria-label="Play bird chirping" title="Play bird sound">▶</button></div>
+          <button class="text-link profile-open" data-kind="Bird">Create a bird profile <span>↗</span></button>
+        </article>
+      </div>
+      <div class="custom-pets" id="customPets" hidden>
+        <div class="custom-pets-head"><div><div class="eyebrow">YOUR FAMILY</div><h3>Your saved companions</h3></div><span class="saved-count" id="savedCount">0 pets</span></div>
+        <div class="saved-pet-list" id="savedPetList"></div>
+      </div>
+      <div class="add-pet-row"><div><span class="add-icon">＋</span><span><strong>Have another kind of companion?</strong><small>Build a little profile for your family member.</small></span></div><button class="button button-outline" id="addPetButton">Add a pet <span>↗</span></button></div>
+    </section>
+
+    <section class="sound-section" id="sounds">
+      <div class="sound-inner section-wrap">
+        <div class="sound-copy">
+          <div class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> A MOMENT OF WONDER</div>
+          <h2>Some things are<br>better <em>heard.</em></h2>
+          <p>Take a little pause. Choose a companion and hear an original, playful sound sketch made right in your browser. These are synthesised approximations—not real animal recordings.</p>
+          <div class="sound-controls">
+            <button class="sound-tile" data-sound="cat"><span class="sound-tile-icon">🐈</span><span><strong>A cat’s hello</strong><small>Soft, rising meow</small></span><span class="tile-play">▶</span></button>
+            <button class="sound-tile" data-sound="dog"><span class="sound-tile-icon">🐕</span><span><strong>A dog’s woof</strong><small>A short, playful bark</small></span><span class="tile-play">▶</span></button>
+            <button class="sound-tile" data-sound="bird"><span class="sound-tile-icon">🦜</span><span><strong>Birdsong</strong><small>Bright little chirps</small></span><span class="tile-play">▶</span></button>
+          </div>
+          <p class="sound-status" id="soundStatus" aria-live="polite">Sound is off until you choose to play.</p>
+        </div>
+        <div class="sound-art" aria-hidden="true">
+          <div class="sound-ring ring-a"></div><div class="sound-ring ring-b"></div><div class="sound-ring ring-c"></div>
+          <div class="sound-art-center">♪</div>
+          <span class="floating-emoji emoji-one">🐈</span><span class="floating-emoji emoji-two">🐕</span><span class="floating-emoji emoji-three">🦜</span>
+          <span class="sound-note note-a">meow</span><span class="sound-note note-b">woof!</span><span class="sound-note note-c">tweet</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="care-section section-wrap section-pad" id="care">
+      <div class="section-heading">
+        <div><div class="eyebrow">THE CARE JOURNAL</div><h2>Little routines.<br><em>More peace of mind.</em></h2></div>
+        <p>A first step toward keeping everyday pet-care details organised. Your entries stay in this browser on this device.</p>
+      </div>
+      <div class="care-layout">
+        <div class="care-intro"><div class="care-icon">✦</div><h3>Care that feels considered.</h3><p>Start with a note, a routine, or something you want to remember for your pet’s next check-up.</p><div class="care-disclaimer">MyPet is an organiser, not a veterinary service. For health concerns, contact a qualified veterinarian.</div></div>
+        <form class="care-form" id="careForm">
+          <label for="carePet">Pet name</label><input id="carePet" name="pet" placeholder="e.g. Milo" required maxlength="40"/>
+          <label for="careType">Care note type</label><select id="careType" name="type"><option>Daily routine</option><option>Food & water</option><option>Grooming</option><option>Vet visit</option><option>Vaccination record</option><option>Behaviour note</option></select>
+          <label for="careNote">Your note</label><textarea id="careNote" name="note" placeholder="What would you like to remember?" rows="3" required maxlength="500"></textarea>
+          <button class="button button-primary" type="submit">Save care note <span>→</span></button>
+          <p class="form-message" id="careMessage" aria-live="polite"></p>
+        </form>
+      </div>
+      <div class="notes-list-wrap" id="notesWrap" hidden><div class="notes-list-head"><h3>Recent notes</h3><button class="text-link" id="clearNotes">Clear notes</button></div><div id="notesList" class="notes-list"></div></div>
+    </section>
+
+    <section class="closing section-wrap">
+      <div><div class="eyebrow">MADE FOR THE ONES WHO LOVE THEM</div><h2>More than a pet.<br><em>Part of everything.</em></h2></div>
+      <a class="button button-primary" href="#companions">Make a little space <span>↗</span></a>
+      <div class="closing-flower" aria-hidden="true">✳</div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-wrap">
+    <a class="brand" href="#home"><span class="brand-mark">✦</span><span>my<span class="brand-light">pet</span></span></a>
+    <span>Thoughtfully made for companion animals and the people who love them.</span>
+    <span>© <span id="year"></span> MyPet · First-look prototype</span>
+  </footer>
+
+  <dialog id="petDialog" class="pet-dialog">
+    <form id="petForm" method="dialog">
+      <div class="dialog-top"><div><div class="eyebrow">A NEW COMPANION</div><h2>Make a little <em>profile.</em></h2></div><button type="button" class="dialog-close" id="closeDialog" aria-label="Close">×</button></div>
+      <label for="petName">Pet’s name</label><input id="petName" name="name" required maxlength="40" placeholder="e.g. Luna"/>
+      <label for="petSpecies">Species</label><select id="petSpecies" name="species"><option>Dog</option><option>Cat</option><option>Bird</option><option>Rabbit</option><option>Fish</option><option>Other</option></select>
+      <label for="petBreed">Breed or type <span class="optional">(optional)</span></label><input id="petBreed" name="breed" maxlength="60" placeholder="e.g. Indie, Persian, Budgie"/>
+      <div class="dialog-row"><div><label for="petAge">Age <span class="optional">(optional)</span></label><input id="petAge" name="age" maxlength="30" placeholder="e.g. 2 years"/></div><div><label for="petPersonality">Personality</label><select id="petPersonality" name="personality"><option>Curious</option><option>Playful</option><option>Gentle</option><option>Adventurous</option><option>Quiet</option><option>Independent</option></select></div></div>
+      <label for="petNotes">A little note <span class="optional">(optional)</span></label><textarea id="petNotes" name="notes" rows="2" maxlength="240" placeholder="Favourite toy, food preferences, little quirks…"></textarea>
+      <p class="privacy-hint">Prototype note: profiles are saved only in this browser using local storage. They are not synced or backed up.</p>
+      <button class="button button-primary dialog-submit" type="submit">Save companion <span>→</span></button>
+      <p id="petFormMessage" class="form-message" aria-live="polite"></p>
+    </form>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
